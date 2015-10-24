@@ -24,8 +24,8 @@ from boto.s3.connection import Location
 def put():
 
     # Access keys 
-    AWS_ACCESS_KEY_ID='AKIAJGQE6BZY4X7LYAYA'
-    AWS_SECRET_ACCESS_KEY='I4pZdgKnG0NARVeXbz7DZ9F5D97CyRMmtIA0qgJz'
+    AWS_ACCESS_KEY_ID= your aws access key
+    AWS_SECRET_ACCESS_KEY=your secret access key
 
     # Establish connection with Amazon S3
     conn = S3Connection(AWS_ACCESS_KEY_ID,AWS_SECRET_ACCESS_KEY,validate_certs=False,is_secure=False)
