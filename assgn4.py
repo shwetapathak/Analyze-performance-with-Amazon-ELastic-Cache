@@ -44,9 +44,8 @@ def insert_data():
 
     db = MySQLdb.connect(host= "shweta.ckcwra3d81nf.us-west-2.rds.amazonaws.com",user="root",passwd="root1234",db="earthquakes_database")
     # Access keys 
-    AWS_ACCESS_KEY_ID='AKIAJGQE6BZY4X7LYAYA'
-    AWS_SECRET_ACCESS_KEY='I4pZdgKnG0NARVeXbz7DZ9F5D97CyRMmtIA0qgJz'
-
+    AWS_ACCESS_KEY_ID= your aws access key
+    AWS_SECRET_ACCESS_KEY=your secret access key
     # Establish connection with Amazon S3
     conn = S3Connection(AWS_ACCESS_KEY_ID,AWS_SECRET_ACCESS_KEY,validate_certs=False,is_secure=False)
 
@@ -78,9 +77,8 @@ def insert_data():
 # Listing all the buckets available
 def list_objects():
     # Access keys 
-    AWS_ACCESS_KEY_ID='AKIAJGQE6BZY4X7LYAYA'
-    AWS_SECRET_ACCESS_KEY='I4pZdgKnG0NARVeXbz7DZ9F5D97CyRMmtIA0qgJz'
-
+    AWS_ACCESS_KEY_ID= your aws access key
+    AWS_SECRET_ACCESS_KEY=your secret access key
     # Establish connection with Amazon S3
     conn = S3Connection(AWS_ACCESS_KEY_ID,AWS_SECRET_ACCESS_KEY,validate_certs=False,is_secure=False)
 
@@ -96,9 +94,8 @@ def list_objects():
 def list_files():
         
     # Access keys 
-    AWS_ACCESS_KEY_ID='AKIAJGQE6BZY4X7LYAYA'
-    AWS_SECRET_ACCESS_KEY='I4pZdgKnG0NARVeXbz7DZ9F5D97CyRMmtIA0qgJz'
-
+    AWS_ACCESS_KEY_ID= your aws access key
+    AWS_SECRET_ACCESS_KEY=your secret access key
     # Establish connection with Amazon S3
     conn = S3Connection(AWS_ACCESS_KEY_ID,AWS_SECRET_ACCESS_KEY,validate_certs=False,is_secure=False)
 
